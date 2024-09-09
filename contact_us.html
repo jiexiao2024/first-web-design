@@ -4,68 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheet/site.css" />
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    <header>
+        <div id="banner">
+            <p>Notification</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>           
+        </nav>
+    </header>
 
-    <h1 style="color: cornflowerblue;">Contact Us</h1>
-    <hr/>
+    <main>
+        <h1 >Contact Us</h1>
+        <hr/>
+    
+        <h2>Locations</h2>
+        <article>
+            <table>
+                <tr>
+                    <ht>Logo</ht>
+                    <th>Location</th>
+                    <th>Opening Hours</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src="" alt="logo 1"/>
+                    </td>
+                    <td>Mandeville</td>
+                    <td>9AM - 5PM</td>
+                    <td>mandevillebranch@preservation.com</td>
+                    <td>18767412589</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src="" alt="logo 2"/>
+                    </td>
+                    <td>Kinston</td>
+                    <td>9AM - 5PM</td>
+                    <td>kinstonbranch@preservation.com</td>
+                    <td>18767412589</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src="" alt="logo 3"/>
+                    </td>
+                    <td>Montego Bay</td>
+                    <td>9AM - 5PM</td>
+                    <td>mobaybranch@preservation.com</td>
+                    <td>18767412589</td>
+                </tr>
+            </table>
+        </article>
+        <article>
+            <h2>General Inquiries</h2>
+            <form action="confirmation.html"> 
+                <label for="fullname">Name: *</label><br/>
+                <input required type="text" id="fullname" name="fullname"/>
+                <br/><br/>
+                <label for="email">Email Address: *</label><br/>
+                <input required type="email" id="email" name="emailaddress"/>
+                <br/><br/>
+                <label>Are you employed?</label><br/>
+                <input type="radio" value="Y" name="employed"/> Yes
+                <input type="radio" value="N" name="employed"/> No
+                <br/><br/>
+                <label for="inquiry">State your inquirey *</label><br/>
+                <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
+                <br/><br/>
+                <input type="submit"/>
+            </form>
+        </article>
+    </main>
 
-    <h2>Locations</h2>
-    <table>
-        <tr>
-            <ht>Logo</ht>
-            <th>Location</th>
-            <th>Opening Hours</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>
-                <img src="" alt="logo 1"/>
-            </td>
-            <td>Mandeville</td>
-            <td>9AM - 5PM</td>
-            <td>mandevillebranch@preservation.com</td>
-            <td>18767412589</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="" alt="logo 2"/>
-            </td>
-            <td>Kinston</td>
-            <td>9AM - 5PM</td>
-            <td>kinstonbranch@preservation.com</td>
-            <td>18767412589</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="" alt="logo 3"/>
-            </td>
-            <td>Montego Bay</td>
-            <td>9AM - 5PM</td>
-            <td>mobaybranch@preservation.com</td>
-            <td>18767412589</td>
-        </tr>
-    </table>
-    <h2>General Inquiries</h2>
-    <form action="confirmation.html"> 
-        <label for="fullname">Name: *</label><br/>
-        <input required type="text" id="fullname" name="fullname"/>
+    <footer>
         <br/><br/>
-        <label for="email">Email Address: *</label><br/>
-        <input required type="email" id="email" name="emailaddress"/>
-        <br/><br/>
-        <label>Are you employed?</label><br/>
-        <input type="radio" value="Y" name="employed"/> Yes
-        <input type="radio" value="N" name="employed"/> No
-        <br/><br/>
-        <label for="inquiry">State your inquirey *</label><br/>
-        <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
-        <br/><br/>
-        <input type="submit"/>
-    </form>
+        <a href="https://www.amazon.com">Amazon</a>
+
+        <a href="https://www.ebay.com" target="_blank">eBay</a> 
+        <a href="https://www.trevoirwilliams.com" target="_blank">Trevoir Willams Website</a>          
+    </footer>
+
 </body>
 </html>
